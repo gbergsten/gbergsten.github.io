@@ -114,6 +114,67 @@
                                 </ul>
                                 <article>
                                     <h4>The One Piece Metric</h4>
+                                    <div>
+<!--                                     <div style="border:1px solid black;"> -->
+                                        <canvas id="myChart"></canvas>
+                                    </div>
+                                    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                                    <script>
+                                        const ctx = document.getElementById('myChart');
+//                                         const customCanvasBackgroundColor = {
+//                                             id: 'customCanvasBackgroundColor',
+//                                             beforeDraw: (chart, args, options) => {
+//                                                 const {ctx} = chart;
+//                                                 ctx.save();
+//                                                 ctx.globalCompositeOperation = 'destination-over';
+//                                                 ctx.fillStyle = options.color || '#99ffff';
+//                                                 ctx.fillRect(0, 0, chart.width, chart.height);
+//                                                 ctx.restore();
+//                                             }
+//                                         };
+//                                         const chartAreaBorder = {
+//                                             id: 'chartAreaBorder',
+//                                             beforeDraw(chart, args, options) {
+//                                                 const {ctx, chartArea: {left, top, width, height}} = chart;
+//                                                 ctx.save();
+//                                                 ctx.strokeStyle = options.borderColor;
+//                                                 ctx.lineWidth = options.borderWidth;
+//                                                 ctx.setLineDash(options.borderDash || []);
+//                                                 ctx.lineDashOffset = options.borderDashOffset;
+//                                                 ctx.strokeRect(left, top, width, height);
+//                                                 ctx.restore();
+//                                             }
+//                                         };
+                                        new Chart(ctx, {
+                                            type: 'line',
+//                                             plugins: [customCanvasBackgroundColor],
+                                            data: {
+                                                labels: ['Astra Lost in Space','Bleach','Dandadan','Dragon Ball Super','Earth Child','Fairy Tail','Fire Force','Flying Witch','Food Wars','Mashle','My Hero Academia','Naruto','One Piece','One Punch Man','Super Smartphone','To The Abandonned Sacred Beasts','Undead Unluck','Witch Watch','Yu-Gi-Oh!','Yu-Gi-Oh!: Duelist'],
+                                                datasets: [{
+                                                    label: 'First Recorded Chapter',
+                                                    data: [12, 65, 13, 42, 26, 19, 61, 4, 64, 166, 337, 264, 2, 62, 1, 4, 3, 8, 13, 144],
+                                                    borderWidth: 1,
+                                                    showLine:false,
+                                                    backgroundColor:'#967bb6',
+                                                }]
+                                            },
+                                            options: {
+                                                scales: {
+                                                    y: {
+                                                        beginAtZero: true, title:{display:true,text:'First Recorded Chapter'}
+                                                    }
+                                                },
+                                                plugins: {
+                                                    legend: {
+                                                        display:false
+                                                    },
+//                                                     customCanvasBackgroundColor: {
+//                                                         color:'#fafafa'
+//                                                     }
+                                                }
+                                            }
+                                        });
+                                    </script>
                                 </article>
                             </div>
                         </section>
