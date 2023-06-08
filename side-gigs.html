@@ -146,22 +146,26 @@
 //                                             }
 //                                         };
                                         new Chart(ctx, {
-                                            type: 'line',
+                                            type: 'scatter',
 //                                             plugins: [customCanvasBackgroundColor],
                                             data: {
-                                                labels: ['Astra Lost in Space','Bleach','Dandadan','Dragon Ball Super','Earth Child','Fairy Tail','Fire Force','Flying Witch','Food Wars','Mashle','My Hero Academia','Naruto','One Piece','One Punch Man','Super Smartphone','To The Abandonned Sacred Beasts','Undead Unluck','Witch Watch','Yu-Gi-Oh!','Yu-Gi-Oh!: Duelist'],
+                                                labels: ['Super Smartphone', 'One Piece', 'Undead Unluck', 'Flying Witch', 'To The Abandonned Sacred Beasts', 'Witch Watch', 'Astra Lost in Space', 'Dandadan', 'Yu-Gi-Oh!', 'Fairy Tail', 'Earth Child', 'Dragon Ball Super', 'Fire Force', 'One Punch Man', 'Food Wars', 'Bleach', 'Yu-Gi-Oh!: Duelist', 'Mashle', 'Naruto', 'My Hero Academia'],
                                                 datasets: [{
                                                     label: 'First Recorded Chapter',
-                                                    data: [12, 65, 13, 42, 26, 19, 61, 4, 64, 166, 337, 264, 2, 62, 1, 4, 3, 8, 13, 144],
-                                                    borderWidth: 1,
-                                                    showLine:false,
-                                                    backgroundColor:'#967bb6',
+                                                    data: [{x: 1, y: 0.0}, {x: 2, y: 0.05}, {x: 3, y: 0.1}, {x: 4, y: 0.15}, {x: 4, y: 0.2}, {x: 8, y: 0.25}, {x: 12, y: 0.3}, {x: 13, y: 0.35}, {x: 13, y: 0.4}, {x: 19, y: 0.45}, {x: 26, y: 0.5}, {x: 42, y: 0.55}, {x: 61, y: 0.6}, {x: 62, y: 0.65}, {x: 64, y: 0.7}, {x: 65, y: 0.75}, {x: 144, y: 0.8}, {x: 166, y: 0.85}, {x: 264, y: 0.9}, {x: 337, y: 0.95}],
+                                                    showLine:true,
+                                                    backgroundColor:'#kkkkkk',
+                                                    elements:{point:{radius:5,borderWidth:0,pointBackgroundColor:'#967bb6'},
+                                                        line:{borderWidth:8}},
                                                 }]
                                             },
                                             options: {
                                                 scales: {
+                                                    x: {
+                                                        type: 'logarithmic', title:{display:true,text:'First Recorded Chapter'}
+                                                    },
                                                     y: {
-                                                        beginAtZero: true, title:{display:true,text:'First Recorded Chapter'}
+                                                        beginAtZero: true, title:{display:true,text:'CDF'}
                                                     }
                                                 },
                                                 plugins: {
@@ -179,8 +183,7 @@
                             </div>
                         </section>
                 </div>
-    
-
+   
 				<!-- Footer -->
 					<section id="footer">
 						<div class="container">
