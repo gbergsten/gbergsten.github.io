@@ -1,503 +1,264 @@
-<!DOCTYPE HTML>
-<!--
-	Read Only by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Galen Bergsten</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-        <script type="text/javascript" id="MathJax-script" async
-              src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
-        </script>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Galen Bergsten</title>
+        <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon"/>
+        
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+        <script src="https://kit.fontawesome.com/c76cb06509.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./assets/css/academicons.min.css"/>
+    </head>
 
-		<!-- Header -->
-			<section id="header">
-				<header>
-					<span class="image avatar"><img src="images/headshot.jpg" alt="Professional headshot of a smiling person with blonde hair and thin blue glasses." /></span>
-					<h1 id="logo"><a href="#">Galen Bergsten</a></h1>
-<!-- 					<p></p> -->
-				</header>
-				<nav id="nav">
-					<ul>
-						<li><a href="#one">Overview</a></li>
-						<li><a href="#two">Research</a></li>
-						<li><a href="#three">About Me</a></li>
-                        <li><a href="side-gigs.html">Side Gigs</a></li>
-<!-- 						<li><a href="#four">Contact</a></li> -->
-					</ul>
-				</nav>
-<!--                 <div class="actions">
-                    <a href="side-gigs.html" class="button">Side Gigs</a>
-                </div> -->
-				<footer>
-<!--                     <ul href="#" class="button">Default</ul> -->
-					<ul class="icons">
-<!--                         <li><a href="index.html" class="icon solid fa-home"><span class="label">Homepage</span></a></li> -->
-						<li><a href="https://twitter.com/galen_bergsten" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-<!-- 						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li> -->
-<!-- 						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li> -->
-						<li><a href="https://github.com/gbergsten" class="icon brands fa-github"><span class="label">Github</span></a></li>
-<!-- 						<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li> -->
-					</ul>
-				</footer>
-			</section>
-
-		<!-- Wrapper -->
-			<div id="wrapper">
-
-				<!-- Main -->
-					<div id="main">
-
-						<!-- One -->                       
-                            <section id="one">
-<!-- 								<div class="image main" data-position="center">
-									<img src="images/banner.jpg" alt="" />
-								</div> -->
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-6 col-12-xsmall">
-                                            <header class="major">
-                                                <h2>Overview</h2>
-                                            </header>
-                                        </div>
-<!--                                         <div class="col-6 col-12-xsmall">
-                                            <header class="major" align="right">
-                                                <a href="https://gbergsten.github.io/documents/bergsten_CV.pdf" class="button large">View CV</a>
-                                            </header>
-                                        </div> -->
-                                    </div>
-                                    <p>My name's Galen, and I'm a graduate student at the University of Arizona's Lunar and Planetary Laboratory. I work with Prof. Ilaria Pascucci to study exoplanet demographics, with a focus on the occurrence rate of Earth-sized habitable zone planets.</p>
-									<ul class="feature-icons">
-                                        <li class="icon solid fa-envelope">gbergsten (at) arizona (dot) edu</li>
-                                        <li class="icon solid fa-book"><a href="https://ui.adsabs.harvard.edu/public-libraries/HUaim5TyR3-zDPwp5FDisg">Library of first- and co-authored works.</a></li>
-                                        <li class="icon solid fa-file-alt"><a href="https://gbergsten.github.io/documents/bergsten_CV.pdf">View my CV</a></li>
-<!-- 										<li class="icon solid fa-code">Write all the code</li>
-										<li class="icon solid fa-cubes">Stack small boxes</li>
-										<li class="icon solid fa-book">Read books and stuff</li>
-										<li class="icon solid fa-coffee">Drink much coffee</li>
-										<li class="icon solid fa-bolt">Lightning bolt</li>
-										<li class="icon solid fa-users">Shadow clone technique</li> -->
-									</ul>
+    <body>
+        <main>
+            <div id="sidebar-container"></div>
+            <div class="main-content">
+                <article class="about active">
+                    <nav class="navbar">
+                        <ul class="navbar-list">
+                            <li class="navbar-item"><a href="index.html" class="navbar-link active">About</a></li>
+                            <li class="navbar-item"><a href="cv.html" class="navbar-link">CV</a></li>
+                            <li class="navbar-item"><a href="research.html" class="navbar-link" data-nav-link>Research</a></li>
+                            <li class="navbar-item"><a href="sidegigs.html" class="navbar-link" data-nav-link>Hobbies</a></li>
+                        </ul>
+                    </nav>
+                    
+                    <header>
+                        <h2 class="h2 article-title">About Me</h2>
+                    </header>
+                    
+                    <section class="about-text">
+                        <p>Hello! My name's Galen, and I'm an exoplanet science fellow at STScI specializing in population studies (demographics) of small planets. I also work on programs & policies to improve the safety and inclusivity of the field, and help support the people/communities therein.</p>
+                    </section>
+                    
+                    <section class="service">
+                        <h3 class="h3 service-title">What I'm Doing</h3>
+                        <ul class="service-list">
+                            <li class="service-item">
+                                <div class="service-icon-box"><i class="fa-sharp fa-solid fa-earth-asia fa-2xl" style="color:#dc8aff"></i></div>
+                                <div class="service-content-box">
+                                    <h4 class="h4 service-item-title">Exoplanet Demographics</h4>
+                                    <p class="service-item-text">Population-level studies into planet formation, evolution, and habitability.</p>
                                 </div>
-                            </section>
-						<!-- Two -->
-							<section id="two">
-								<div class="container">
-									<h3>Research</h3>
-									<p>I study populations of exoplanets to learn more about how they form and evolve, and to aid our search for life by understanding the frequency of Earth-like planets.</p>
-									<div class="features">
-                                        <article></article>
-                                        <article>
-                                            <h4>Occurrence of Earth Analogues</h4>
-                                            <span class="fit" ><img src="images/Bergsten2023_Summary.png" width=100% alt="A comparison plot of recent estimates for the occurrence of Earth-sized habitable zone planets around M dwarfs and FGK stars. The left side of the figure compares results of recent studies for M dwarfs. Our new estimate is more uncertain than these previous works, sharing a 1-sigma upper bound of roughly 40% but now with a lower bound of roughly 1% (instead of previous bounds around 20%), and a median value of 14%. Text at the bottom reads that, for M dwarfs, this occurrence rate is less observationally constrained than previously believed. The right side of the figure includes comparisons to recent studies of Sun-like stars. While there is a range of plotted Sun-like estimates spanning from 5% to 85%, all of these values overlap with the new M dwarf estimate within 1 sigma. Text at the bottom restates that Kepler offers no evidence for higher Earth-sized habitable zone planet occurrence rates around M versus FGK stars."/></span>
-											<a class="image"><img src="images/Bergsten2022_etaEarth.jpeg" alt="A plot showing various literature estimates for Gamma_Earth, the occurrence of Earth-sized habitable zone planets (normalized by the log-period and log-radius dimensions of the habitable zone integral). Three colored bands highlight different types of works: works considering atmospheric loss effects or an intrinsic population of rocky planets; works considering the statistical treatment of reliability, and works (so far, only Bergsten et al. 2022) considering both at once. Some earlier papers consider none of these. A vertical line indicates the occurrence rate used for the decadal mission concepts at ~33%, while our newest result is closer to ~15% for the full FGK sample. Individual results for different mass bins are also included but offer no clear trend with stellar mass." /></a>
-											<div class="inner">
-												<p>Earth-sized habitable zone planets are hard to find, which makes it difficult to estimate how common planets like our own might be. We can predict the frequency of Earth-like planets using population models fit to <i>Kepler</i> data, incorporating per-star sensitivity metrics, per-candidate reliability, and considerations of physical processes like atmospheric evolution. For Sun-like stars, we estimate an occurrence rate of \(\eta_\oplus = 9^{+3}_{-2}\%\), or one in ten stars like our Sun hosting a planet like our own.</p>
-                                            </div><p></p>
-                                            <a class="image"><img src="images/Bergsten2023_etaEarth.png" alt="A comparison plot of occurrence estimates calculated in instellation using different methodologies from Bergsten et al. (2023), including original values from Dressing and Charbonneau (2015). All of the updated estimates have larger uncertainties, with the lowest estimates accounting for both reliability and parameter uncertainties." /></a>
-											<div class="inner">
-												<p>The picture is less clear for Earth analogues orbiting M dwarfs (or stars between one-half and one-tenth of a Solar mass).  <i>Kepler</i> did not originally target many M dwarfs, and <i>Gaia</i>-informed revisions of stellar properties reduced the current sample even further. As a result, our updated occurrence estimate of \(\eta_\oplus = 9^{+18}_{-8}\%\) (or \(14^{+25}_{-13}\%\) in an optimistic case) for M dwarfs is highly uncertain. Thus, the <i>Kepler</i> sample does not offer evidence that M dwarfs should have more Earth-sized planets in their habitable zones (compared to Sun-like stars). Other surveys like <i>TESS</i> and <i>K2</i> are well-suited to provide additional insight on this topic!</p>
-											</div>
-										</article>
-										<article>
-											<h4>Atmospheric Evolution of Small Planets</h4>
-											<a class="image"><img src="images/AtmEvolution.png" alt="Top: A cartoon population of exoplanets arranged in a grid of orbital period and planet radius, each with some atmospheric envelope drawn around an internal core. There are two rows of super-Earths surrounded by a box indicating super-Earth-sized objects, and three rows of sub-Neptunes. Bottom: Similar to the top panel, but now some of the shortest-period planets have lost or shrunken atmospheres. The super-Earth box now includes some shurnken sub-Neptunes at the shortest periods, while the planets farther out retain their atmospheres and are larger. An arrow labeled 'time' connects the two panels, indicating the bottom panel is an older population." /></a>
-											<div class="inner">
-												<p>Young small planets close to their stars can lose their atmospheres and shrink over time. The planets we observed with <i>Kepler</i> are mostly old and have already undergone this atmospheric evolution, making it difficult to infer the size distribution of planets at the time of their formation. But these loss mechanisms are inefficient for planets farther away from their stars, meaning the long-period planets can tell us about the primordial populations.</p>
-                                            </div> <p></p>
-											<a class="image"><img src="images/Bergsten2022_sE.png" alt="A plot showing data and modeled results for the fraction of small planets contributed by super-Earths as a function of orbital period. Values at 100 days are around 40%, with a label suggesting these super-Earths are all intrinsically rocky. Values at 2 days are around 80%; a horizontal line connecting the short and long periods shows the difference of 40%, implying that 40% of small planets are former sub-Neptunes at the shortest periods. The curve spanning from 2 to 100 days follows a decreasing log curve which appears to flatten out on either side." /></a>
-											<div class="inner">
-												<p>We find that 40% of small planets are likely intrinsically rocky super-Earths at the time of formation. At short orbital periods, atmospheric loss processes add an extra 40% of super-Earth sized objects from the remnant cores of former sub-Neptunes. The latter is stellar mass dependent, with heavier (brighter) stars stripping more of their planets out to farther separations.</p>
-											</div>
-										</article>
-<!-- 										<article>
-											<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
-											<div class="inner">
-												<h4>Snapped dark matter in the wild</h4>
-												<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
-											</div>
-										</article> -->
-									</div>
-								</div>
-							</section>
-                        
-						<!-- Three -->
-							<section id="three">
-								<div class="container">
-									<h3>About Me</h3>
-                                    <p>I joined the University of Arizona as a PhD student in August 2020, and recently passed my candidacy exams in May 2023. From 2016-2020, I was an undergraduate studying physics/astronomy and biology at the University of Utah, where I worked with Dr. Gail Zasowski to study stellar populations and the interstellar medium. I have general interests in quantitative astrobiology, the search for planets/systems like our own, and the accessibility of astronomy (both in academia and at large).</p>
-									<p>Outside of academia, I love cooking, spending time at botanical gardens, reading manga and playing indie games. For more on what I get up to outside of work, <a href="side-gigs.html">check out my Side Gigs page.</a></p>
-<!--                                     <ul class="actions fit">
-										<li><a href="#" class="button primary icon solid fa-paint-brush">Art Stuff</a></li>
-                                        <li><a href="#" class="button alt icon solid fa-gamepad">Playing Games with my Feet</a></li>
-										<li><a href="#" class="button icon solid fa-chart-bar">The One Piece Metric</a></li>
-                                    </ul> -->
-								</div>
-							</section>
-                        
-                        
-<!-- Start of Extra Code for Example HTML Stuff -->
+                            </li>
+                            
+                            <li class="service-item">
+                                <div class="service-icon-box"><i class="fa-sharp fa-solid fa-code fa-2xl" style="color:#dc8aff"></i></div>
+                                <div class="service-content-box">
+                                    <h4 class="h4 service-item-title">Demographics Software</h4>
+                                    <p class="service-item-text">Making public tools so everyone can do demographics.</p>
+                                </div>
+                            </li>
+                            
+                            <li class="service-item">
+                                <div class="service-icon-box"><i class="fa-sharp fa-solid fa-universal-access fa-2xl" style="color:#dc8aff"></i></div>
+                                <div class="service-content-box">
+                                    <h4 class="h4 service-item-title">Accessibility Policy</h4>
+                                    <p class="service-item-text">Working to make my local spaces and communities more accessible.</p>
+                                </div>
+                            </li>
+<!-- 
+  <section class="testimonials">
+    <h3 class="h3 testimonials-title">Testimonials</h3>
 
-						<!-- Four -->
-<!-- 								<div class="container">
-									<h3>Elements</h3>
+    <ul class="testimonials-list has-scrollbar">
+      <li class="testimonials-item">
+        <div class="content-card" data-testimonials-item>
+          <figure class="testimonials-avatar-box">
+            <img
+              src="./assets/images/avatar-1.png"
+              alt="Daniel lewis"
+              width="60"
+              data-testimonials-avatar
+            />
+          </figure>
 
-									<section>
-										<h4>Text</h4>
-										<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-										This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-										This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-										<hr />
-										<header>
-											<h4>Heading with a Subtitle</h4>
-											<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-										</header>
-										<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-										<header>
-											<h5>Heading with a Subtitle</h5>
-											<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-										</header>
-										<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-										<hr />
-										<h2>Heading Level 2</h2>
-										<h3>Heading Level 3</h3>
-										<h4>Heading Level 4</h4>
-										<h5>Heading Level 5</h5>
-										<h6>Heading Level 6</h6>
-										<hr />
-										<h5>Blockquote</h5>
-										<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-										<h5>Preformatted</h5>
-										<pre><code>i = 0;
+          <h4 class="h4 testimonials-item-title" data-testimonials-title>
+            Daniel lewis
+          </h4>
 
-while (!deck.isInOrder()) {
-    print 'Iteration ' + i;
-    deck.shuffle();
-    i++;
-}
+          <div class="testimonials-text" data-testimonials-text>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis iste, adipisci excepturi maxime suscipit unde deserunt consectetur delectus aspernatur obcaecati minus ullam laboriosam eius nihil aperiam. Sint explicabo numquam dolorum?
+            </p>
+          </div>
+        </div>
+      </li>
 
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-									</section>
+      <li class="testimonials-item">
+        <div class="content-card" data-testimonials-item>
+          <figure class="testimonials-avatar-box">
+            <img
+              src="./assets/images/avatar-2.png"
+              alt="Jessica miller"
+              width="60"
+              data-testimonials-avatar
+            />
+          </figure>
 
-									<section>
-										<h4>Lists</h4>
-										<div class="row">
-											<div class="col-6 col-12-xsmall">
-												<h5>Unordered</h5>
-												<ul>
-													<li>Dolor pulvinar etiam magna etiam.</li>
-													<li>Sagittis adipiscing lorem eleifend.</li>
-													<li>Felis enim feugiat dolore viverra.</li>
-												</ul>
-												<h5>Alternate</h5>
-												<ul class="alt">
-													<li>Dolor pulvinar etiam magna etiam.</li>
-													<li>Sagittis adipiscing lorem eleifend.</li>
-													<li>Felis enim feugiat dolore viverra.</li>
-												</ul>
-											</div>
-											<div class="col-6 col-12-xsmall">
-												<h5>Ordered</h5>
-												<ol>
-													<li>Dolor pulvinar etiam magna etiam.</li>
-													<li>Etiam vel felis at lorem sed viverra.</li>
-													<li>Felis enim feugiat dolore viverra.</li>
-													<li>Dolor pulvinar etiam magna etiam.</li>
-													<li>Etiam vel felis at lorem sed viverra.</li>
-													<li>Felis enim feugiat dolore viverra.</li>
-												</ol>
-												<h5>Icons</h5>
-												<ul class="icons">
-													<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-													<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-													<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-													<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-													<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-													<li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
-												</ul>
-											</div>
-										</div>
-										<h5>Actions</h5>
-										<ul class="actions">
-											<li><a href="#" class="button primary">Default</a></li>
-											<li><a href="#" class="button">Default</a></li>
-											<li><a href="#" class="button alt">Default</a></li>
-										</ul>
-										<ul class="actions small">
-											<li><a href="#" class="button primary small">Small</a></li>
-											<li><a href="#" class="button small">Small</a></li>
-											<li><a href="#" class="button alt small">Small</a></li>
-										</ul>
-										<div class="row">
-											<div class="col-3 col-6-medium col-12-xsmall">
-												<ul class="actions stacked">
-													<li><a href="#" class="button primary">Default</a></li>
-													<li><a href="#" class="button">Default</a></li>
-													<li><a href="#" class="button alt">Default</a></li>
-												</ul>
-											</div>
-											<div class="col-3 col-6 col-12-xsmall">
-												<ul class="actions stacked">
-													<li><a href="#" class="button primary small">Small</a></li>
-													<li><a href="#" class="button small">Small</a></li>
-													<li><a href="#" class="button alt small">Small</a></li>
-												</ul>
-											</div>
-											<div class="col-3 col-6-medium col-12-xsmall">
-												<ul class="actions stacked">
-													<li><a href="#" class="button primary fit">Default</a></li>
-													<li><a href="#" class="button fit">Default</a></li>
-													<li><a href="#" class="button alt fit">Default</a></li>
-												</ul>
-											</div>
-											<div class="col-3 col-6-medium col-12-xsmall">
-												<ul class="actions stacked">
-													<li><a href="#" class="button primary small fit">Small</a></li>
-													<li><a href="#" class="button small fit">Small</a></li>
-													<li><a href="#" class="button alt small fit">Small</a></li>
-												</ul>
-											</div>
-										</div>
-									</section>
+          <h4 class="h4 testimonials-item-title" data-testimonials-title>
+            Jessica miller
+          </h4>
 
-									<section>
-										<h4>Table</h4>
-										<h5>Default</h5>
-										<div class="table-wrapper">
-											<table>
-												<thead>
-													<tr>
-														<th>Name</th>
-														<th>Description</th>
-														<th>Price</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td>Item One</td>
-														<td>Ante turpis integer aliquet porttitor.</td>
-														<td>29.99</td>
-													</tr>
-													<tr>
-														<td>Item Two</td>
-														<td>Vis ac commodo adipiscing arcu aliquet.</td>
-														<td>19.99</td>
-													</tr>
-													<tr>
-														<td>Item Three</td>
-														<td> Morbi faucibus arcu accumsan lorem.</td>
-														<td>29.99</td>
-													</tr>
-													<tr>
-														<td>Item Four</td>
-														<td>Vitae integer tempus condimentum.</td>
-														<td>19.99</td>
-													</tr>
-													<tr>
-														<td>Item Five</td>
-														<td>Ante turpis integer aliquet porttitor.</td>
-														<td>29.99</td>
-													</tr>
-												</tbody>
-												<tfoot>
-													<tr>
-														<td colspan="2"></td>
-														<td>100.00</td>
-													</tr>
-												</tfoot>
-											</table>
-										</div>
+          <div class="testimonials-text" data-testimonials-text>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis iste, adipisci excepturi maxime suscipit unde deserunt consectetur delectus aspernatur obcaecati minus ullam laboriosam eius nihil aperiam. Sint explicabo numquam dolorum?
+            </p>
+          </div>
+        </div>
+      </li>
 
-										<h5>Alternate</h5>
-										<div class="table-wrapper">
-											<table class="alt">
-												<thead>
-													<tr>
-														<th>Name</th>
-														<th>Description</th>
-														<th>Price</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td>Item One</td>
-														<td>Ante turpis integer aliquet porttitor.</td>
-														<td>29.99</td>
-													</tr>
-													<tr>
-														<td>Item Two</td>
-														<td>Vis ac commodo adipiscing arcu aliquet.</td>
-														<td>19.99</td>
-													</tr>
-													<tr>
-														<td>Item Three</td>
-														<td> Morbi faucibus arcu accumsan lorem.</td>
-														<td>29.99</td>
-													</tr>
-													<tr>
-														<td>Item Four</td>
-														<td>Vitae integer tempus condimentum.</td>
-														<td>19.99</td>
-													</tr>
-													<tr>
-														<td>Item Five</td>
-														<td>Ante turpis integer aliquet porttitor.</td>
-														<td>29.99</td>
-													</tr>
-												</tbody>
-												<tfoot>
-													<tr>
-														<td colspan="2"></td>
-														<td>100.00</td>
-													</tr>
-												</tfoot>
-											</table>
-										</div>
-									</section>
+      <li class="testimonials-item">
+        <div class="content-card" data-testimonials-item>
+          <figure class="testimonials-avatar-box">
+            <img
+              src="./assets/images/avatar-3.png"
+              alt="Emily evans"
+              width="60"
+              data-testimonials-avatar
+            />
+          </figure>
 
-									<section>
-										<h4>Buttons</h4>
-										<ul class="actions">
-											<li><a href="#" class="button primary">Primary</a></li>
-											<li><a href="#" class="button">Default</a></li>
-											<li><a href="#" class="button alt">Alternate</a></li>
-										</ul>
-										<ul class="actions">
-											<li><a href="#" class="button primary large">Large</a></li>
-											<li><a href="#" class="button">Default</a></li>
-											<li><a href="#" class="button alt small">Small</a></li>
-										</ul>
-										<ul class="actions fit">
-											<li><a href="#" class="button primary fit">Fit</a></li>
-											<li><a href="#" class="button fit">Fit</a></li>
-											<li><a href="#" class="button alt fit">Fit</a></li>
-										</ul>
-										<ul class="actions fit small">
-											<li><a href="#" class="button primary fit small">Fit + Small</a></li>
-											<li><a href="#" class="button fit small">Fit + Small</a></li>
-											<li><a href="#" class="button alt fit small">Fit + Small</a></li>
-										</ul>
-										<ul class="actions">
-											<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-											<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-											<li><a href="#" class="button alt icon solid fa-check">Icon</a></li>
-										</ul>
-										<ul class="actions">
-											<li><span class="button primary disabled">Primary</span></li>
-											<li><span class="button disabled">Default</span></li>
-											<li><span class="button alt disabled">Alternate</span></li>
-										</ul>
-									</section>
+          <h4 class="h4 testimonials-item-title" data-testimonials-title>
+            Emily evans
+          </h4>
 
-									<section>
-										<h4>Form</h4>
-										<form method="post" action="#">
-											<div class="row gtr-uniform">
-												<div class="col-6 col-12-xsmall">
-													<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
-												</div>
-												<div class="col-6 col-12-xsmall">
-													<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
-												</div>
-												<div class="col-12">
-													<select name="demo-category" id="demo-category">
-														<option value="">- Category -</option>
-														<option value="1">Manufacturing</option>
-														<option value="1">Shipping</option>
-														<option value="1">Administration</option>
-														<option value="1">Human Resources</option>
-													</select>
-												</div>
-												<div class="col-4 col-12-medium">
-													<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-													<label for="demo-priority-low">Low Priority</label>
-												</div>
-												<div class="col-4 col-12-medium">
-													<input type="radio" id="demo-priority-normal" name="demo-priority">
-													<label for="demo-priority-normal">Normal Priority</label>
-												</div>
-												<div class="col-4 col-12-medium">
-													<input type="radio" id="demo-priority-high" name="demo-priority">
-													<label for="demo-priority-high">High Priority</label>
-												</div>
-												<div class="col-6 col-12-medium">
-													<input type="checkbox" id="demo-copy" name="demo-copy">
-													<label for="demo-copy">Email me a copy of this message</label>
-												</div>
-												<div class="col-6 col-12-medium">
-													<input type="checkbox" id="demo-human" name="demo-human" checked>
-													<label for="demo-human">I am a human and not a robot</label>
-												</div>
-												<div class="col-12">
-													<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-												</div>
-												<div class="col-12">
-													<ul class="actions">
-														<li><input type="submit" value="Send Message" /></li>
-														<li><input type="reset" value="Reset" class="alt" /></li>
-													</ul>
-												</div>
-											</div>
-										</form>
-									</section>
+          <div class="testimonials-text" data-testimonials-text>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis iste, adipisci excepturi maxime suscipit unde deserunt consectetur delectus aspernatur obcaecati minus ullam laboriosam eius nihil aperiam. Sint explicabo numquam dolorum?
+            </p>
+          </div>
+        </div>
+      </li>
 
-									<section>
-										<h4>Image</h4>
-										<h5>Fit</h5>
-										<span class="image fit"><img src="images/banner.jpg" alt="" /></span>
-										<div class="box alt">
-											<div class="row gtr-50 gtr-uniform">
-												<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-											</div>
-										</div>
-										<h5>Left &amp; Right</h5>
-										<p><span class="image left"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-										<p><span class="image right"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-									</section>
+      <li class="testimonials-item">
+        <div class="content-card" data-testimonials-item>
+          <figure class="testimonials-avatar-box">
+            <img
+              src="./assets/images/avatar-4.png"
+              alt="Henry william"
+              width="60"
+              data-testimonials-avatar
+            />
+          </figure>
 
-								</div>
-							</section>
-						 -->
-                        
-<!-- End of Extra Code for Example HTML Stuff -->
+          <h4 class="h4 testimonials-item-title" data-testimonials-title>
+            Henry william
+          </h4>
 
-					</div>
-    
+          <div class="testimonials-text" data-testimonials-text>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis iste, adipisci excepturi maxime suscipit unde deserunt consectetur delectus aspernatur obcaecati minus ullam laboriosam eius nihil aperiam. Sint explicabo numquam dolorum?
+            </p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </section>
 
-				<!-- Footer -->
-					<section id="footer">
-						<div class="container">
-							<ul class="copyright">
-								<li>&copy; Galen Bergsten. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</div>
-					</section>
+  <div class="modal-container" data-modal-container>
+    <div class="overlay" data-overlay></div>
 
-			</div>
+    <section class="testimonials-modal">
+      <button class="modal-close-btn" data-modal-close-btn>
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+      <div class="modal-img-wrapper">
+        <figure class="modal-avatar-box">
+          <img
+            src="./assets/images/avatar-1.png"
+            alt="Daniel lewis"
+            width="80"
+            data-modal-img
+          />
+        </figure>
 
-	</body>
+        <img src="./assets/images/icon-quote.svg" alt="quote icon" />
+      </div>
+
+      <div class="modal-content">
+        <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+        <time datetime="2021-06-14">14 June, 2021</time>
+
+        <div data-modal-text>
+          <p>
+            Richard was hired to create a corporate identity. We were very
+            pleased with the work done. She has a lot of experience and is very
+            concerned about the needs of client. Lorem ipsum dolor sit amet,
+            ullamcous cididt consectetur adipiscing elit, seds do et eiusmod
+            tempor incididunt ut laborels dolore magnarels alia.
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section class="clients">
+    <h3 class="h3 clients-title">Clients</h3>
+
+    <ul class="clients-list has-scrollbar">
+      <li class="clients-item">
+        <a href="#">
+          <img src="./assets/images/logo-1-color.png" alt="client logo" />
+        </a>
+      </li>
+
+      <li class="clients-item">
+        <a href="#">
+          <img src="./assets/images/logo-2-color.png" alt="client logo" />
+        </a>
+      </li>
+
+      <li class="clients-item">
+        <a href="#">
+          <img src="./assets/images/logo-3-color.png" alt="client logo" />
+        </a>
+      </li>
+
+      <li class="clients-item">
+        <a href="#">
+          <img src="./assets/images/logo-4-color.png" alt="client logo" />
+        </a>
+      </li>
+
+      <li class="clients-item">
+        <a href="#">
+          <img src="./assets/images/logo-5-color.png" alt="client logo" />
+        </a>
+      </li>
+
+      <li class="clients-item">
+        <a href="#">
+          <img src="./assets/images/logo-6-color.png" alt="client logo" />
+        </a>
+      </li>
+    </ul>
+  </section> -->
+                        </article>
+            </div>
+        </main>
+        
+        <script>
+      // Load all components
+            Promise.all([
+                fetch("./assets/components/sidebar.html").then(response => response.text()),
+            ]).then(data => {
+                document.getElementById("sidebar-container").innerHTML = data[0];
+                // Load script.js after all components are loaded
+                const script = document.createElement("script");
+                script.src = "./assets/js/script.js";
+                document.body.appendChild(script);
+            });
+        </script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
 </html>

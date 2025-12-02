@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Galen Bergsten</title>
+        <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon"/>
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+        <script src="https://kit.fontawesome.com/c76cb06509.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./assets/css/academicons.min.css"/>
+    </head>
+
+    <body>
+        <main>
+            <div id="sidebar-container"></div>
+            <div class="main-content">
+                <article class="about active">
+                    <nav class="navbar">
+                        <ul class="navbar-list">
+                            <li class="navbar-item"><a href="index.html" class="navbar-link">About</a></li>
+                            <li class="navbar-item"><a href="cv.html" class="navbar-link">CV</a></li>
+                            <li class="navbar-item"><a href="research.html" class="navbar-link active" data-nav-link>Research</a></li>
+                            <li class="navbar-item"><a href="sidegigs.html" class="navbar-link" data-nav-link>Hobbies</a></li>
+                        </ul>
+                    </nav>
+                    
+                      <header>
+                          <h2 class="h2 article-title">Research</h2>
+                      </header>
+    
+                    <section class="projects">
+                        <h3 class="h3 blog-title">Papers by Subject (First-Author and Major Contributions)</h3>
+                        
+                        <ul class="filter-list">
+                            <li class="filter-item"><button class="active" data-filter-btn>All</button></li>
+                            <li class="filter-item"><button data-filter-btn>eta_Earth</button></li>
+                            <li class="filter-item"><button data-filter-btn>Atmospheric Escape</button></li>
+                            <li class="filter-item"><button data-filter-btn>M Dwarfs</button></li>
+                            <li class="filter-item"><button data-filter-btn>Characterizing Stars & Planets</button></li>
+                            <li class="filter-item"><button data-filter-btn>Survey Simulations</button></li>
+                            <!-- <li class="filter-item"><button data-filter-btn>Giant Planets</button></li> -->
+                        </ul>
+                        
+                        <div class="filter-select-box">
+                            <button class="filter-select" data-select>
+                                <div class="select-value" data-select-value>Select Category</div>
+                                <div class="select-icon"><ion-icon name="chevron-down"></ion-icon></div>
+                            </button>
+                            
+                            <ul class="select-list">
+                                <li class="select-item"><button data-select-item>All</button></li>
+                                <li class="select-item"><button data-select-item>eta_Earth</button></li>
+                                <li class="select-item"><button data-select-item>Atmospheric Escape</button></li>
+                                <li class="select-item"><button data-select-item>M Dwarfs</button></li>
+                                <li class="select-item"><button data-select-item>Characterizing Stars & Planets</button></li>
+                                <li class="select-item"><button data-select-item>Survey Simulations</button></li>
+                                <!-- <li class="select-item"><button data-select-item>Giant Planets</button></li> -->
+                            </ul>
+                        </div>
+                        
+                        <ul class="project-list">
+
+                            <!-- <li class="project-item active" data-filter-item data-category='[]'>
+                                <a href="" tartget="_blank">
+                                    <h3 class="project-title"></h3>
+                                    <p class="project-category"></p>
+                                </a>
+                            </li> -->
+
+                            <li class="project-item active" data-filter-item data-category='["eta_earth"]'>
+                                <a href="https://ui.adsabs.harvard.edu/abs/2025arXiv251105660F/abstract" tartget="_blank">
+                                    <p class="project-author">Fernandes et al. (2025)</p>
+                                    <h3 class="project-title">Are We There Yet? Challenges in Quantifying the Frequency of Earth Analogs in the Habitable Zone</h3>
+                                    <p class="project-category">eta_Earth</p>
+                                </a>
+                            </li>
+
+                            <li class="project-item active" data-filter-item data-category='["m dwarfs"]'>
+                                <a href="https://ui.adsabs.harvard.edu/abs/2025AJ....170..183H/abstract" tartget="_blank">
+                                    <p class="project-author">Hardegree-Ullman et al. (2025)</p>
+                                    <h3 class="project-title">Scaling K2. VIII. Short-period Sub-Neptune Occurrence Rates Peak Around Early-type M Dwarfs</h3>
+                                    <p class="project-category">M Dwarfs</p>
+                                </a>
+                            </li>
+
+                            <li class="project-item active" data-filter-item data-category='["atmospheric escape"]'>
+                                <a href="https://ui.adsabs.harvard.edu/abs/2025AJ....169..208F/abstract" tartget="_blank">
+                                    <p class="project-author">Fernandes et al. (2025)</p>
+                                    <h3 class="project-title">Signatures of Atmospheric Mass Loss and Planet Migration in the Time Evolution of Short-period Transiting Exoplanets</h3>
+                                    <p class="project-category">Atmospheric Escape</p>
+                                </a>
+                            </li>
+
+                            <li class="project-item active" data-filter-item data-category='["survey simulations"]'>
+                                <a href="https://ui.adsabs.harvard.edu/abs/2024PSJ.....5....3S/abstract" tartget="_blank">
+                                    <p class="project-author">Schlecker et al. (2024)</p>
+                                    <h3 class="project-title">Bioverse: The Habitable Zone Inner Edge Discontinuity as an Imprint of Runaway Greenhouse Climates on Exoplanet Demographics</h3>
+                                    <p class="project-category">Survey Simulations</p>
+                                </a>
+                            </li>
+
+                            <li class="project-item active" data-filter-item data-category='["eta_earth","m dwarfs"]'>
+                                <a href="https://ui.adsabs.harvard.edu/abs/2023AJ....166..234B/abstract" tartget="_blank">
+                                    <p class="project-author">Bergsten et al. (2023)</p>
+                                    <h3 class="project-title">No Evidence for More Earth-sized Planets in the Habitable Zone of Kepler's M versus FGK Stars</h3>
+                                    <p class="project-category">eta_Earth, M Dwarfs</p>
+                                </a>
+                            </li>
+
+                            <li class="project-item active" data-filter-item data-category='["characterizing stars & planets"]'>
+                                <a href="https://ui.adsabs.harvard.edu/abs/2023AJ....166..175F/abstract" tartget="_blank">
+                                    <p class="project-author">Fernandes et al. (2023)</p>
+                                    <h3 class="project-title">Using Photometrically Derived Properties of Young Stars to Refine TESS's Transiting Young Planet Survey Completeness</h3>
+                                    <p class="project-category">Characterizing Stars & Planets</p>
+                                </a>
+                            </li>
+
+                            <li class="project-item active" data-filter-item data-category='["survey simulations"]'>
+                                <a href="https://ui.adsabs.harvard.edu/abs/2023AJ....165..267H/abstract" tartget="_blank">
+                                    <p class="project-author">Hardegree-Ullman et al. (2023)</p>
+                                    <h3 class="project-title">Bioverse: A Comprehensive Assessment of the Capabilities of Extremely Large Telescopes to Probe Earth-like O2 Levels in Nearby Transiting Habitable-zone Exoplanets</h3>
+                                    <p class="project-category">Survey Simulations</p>
+                                </a>
+                            </li>
+
+                            <li class="project-item active" data-filter-item data-category='["eta_earth","atmospheric escape"]'>
+                                <a href="https://ui.adsabs.harvard.edu/abs/2022AJ....164..190B/abstract" tartget="_blank">
+                                    <p class="project-author">Bergsten et al. (2022)</p>
+                                    <h3 class="project-title">The Demographics of Kepler's Earths and Super-Earths into the Habitable Zone</h3>
+                                    <p class="project-category">eta_Earth, Atmospheric Escape</p>
+                                </a>
+                            </li>
+
+                            <li class="project-item active" data-filter-item data-category='["characterizing stars & planets"]'>
+                                <a href="https://ui.adsabs.harvard.edu/abs/2022AJ....164...78F/abstract" tartget="_blank">
+                                    <p class="project-author">Fernandes et al. (2022)</p>
+                                    <h3 class="project-title">pterodactyls: A Tool to Uniformly Search and Vet for Young Transiting Planets in TESS Primary Mission Photometry</h3>
+                                    <p class="project-category">Characterizing Stars & Planets</p>
+                                </a>
+                            </li>
+
+                            <li class="project-item active" data-filter-item data-category='["atmospheric escape"]'>
+                                <a href="https://ui.adsabs.harvard.edu/abs/2022ApJ...929...52K/abstract" tartget="_blank">
+                                    <p class="project-author">Koskinen et al. (2022)</p>
+                                    <h3 class="project-title">Mass Loss by Atmospheric Escape from Extremely Close-in Planets</h3>
+                                    <p class="project-category">Atmospheric Escape</p>
+                                </a>
+                            </li>
+
+                            <li class="project-item active" data-filter-item data-category='["characterizing stars & planets"]'>
+                                <a href="https://ui.adsabs.harvard.edu/abs/2021AJ....161..167A/abstract" tartget="_blank">
+                                    <p class="project-author">Ashok et al. (2021)</p>
+                                    <h3 class="project-title">The APOGEE Library of Infrared SSP Templates (A-LIST): High-resolution Simple Stellar Population Spectral Models in the H Band</h3>
+                                    <p class="project-category">Characterizing Stars & Planets</p>
+                                </a>
+                            </li>
+
+
+                            
+                            <!-- <li class="project-item active" data-filter-item data-category='["atmospheric mass loss"]'>
+                                <a href="https://word-wise-main-nd8dqu.laravel.cloud" target="_blank">
+                                    <figure class="project-img">
+                                        <div class="project-item-icon-box">
+                                            <ion-icon name="eye-outline"></ion-icon>
+                                        </div>
+                                        <img src="./assets/images/Wordwise.png" alt="arrival" loading="lazy"/>
+                                    </figure>
+                                    <h3 class="project-title">WordWise</h3>
+                                    <p class="project-category">Atmospheric Mass Loss</p>
+                                </a>
+                            </li> -->
+                        </ul>
+                    </section>
+                </article>
+            </div>
+        </main>
+        
+        <script>
+      // Load all components
+            Promise.all([
+                fetch("./assets/components/sidebar.html").then(response => response.text()),
+            ]).then(data => {
+                document.getElementById("sidebar-container").innerHTML = data[0];
+                // Load script.js after all components are loaded
+                const script = document.createElement("script");
+                script.src = "./assets/js/script.js";
+                document.body.appendChild(script);
+            });
+        </script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>
